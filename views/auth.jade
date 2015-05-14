@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+    title Flyt Login
+
+    link(rel="stylesheet", type="text/css", href="/static/css/auth.css")
+  body
+    h1
+      svg(width="120", height="48", viewBox="0 0 120 48", role="img", aria-label="Flyt")
+        title Flyt
+        path(fill="currentColor", d="M114.969,22.204L108.841,13H94v27h-6V13H78V8h27.523l-4.518-6.456C100.262,0.446,99.021,0,97.694,0H4C1.791,0,0,1.791,0,4v40c0,2.209,1.791,4,4,4h93.619c1.283,0,2.488-0.615,3.24-1.654l14.039-19.473C115.884,25.51,115.913,23.596,114.969,22.204z M28,13H14v9h13v4H14v14H8V8h20V13z M52,40H33V8h6v27h13V40z M65,26.712V40h-6V26.712L48.445,8h6.72l6.864,12.432L69.229,8h6.672L65,26.712z")
+      | Login
+
+    #mroot
+      span.waiting Waiting for scripts...
+
+    script.
+      window.glob = !{JSON.stringify(glob)};
+      
+    script(src="/static/js/libs.js")
+    script(src="/static/js/auth.js")
