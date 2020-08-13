@@ -9,7 +9,7 @@
     "express": "~4.12.3",
     "express-session": "~1.11.1",
     "mandrill-api": "~1.0.45",
-    "moment": "~2.11.2",
+    "moment": "~2.27.0",
     "sqlite3": "~3.0.6",
     "validator": "~3.39.0",
     "jade": "^1.9.2"
